@@ -52,8 +52,9 @@ export const Products: React.FC = () => {
     (product: Product) => {
       setSelectedProduct(product);
       const newUrl = `/products?modal=${product.id}`;
-      router.push(newUrl, { shallow: true });
-    },
+      // router.push(newUrl, { shallow: true });
+      router.push(newUrl);
+     },
     [router]
   );
 
@@ -61,7 +62,8 @@ export const Products: React.FC = () => {
   const handleCloseModal = useCallback(() => {
     setSelectedProduct(null);
     const newUrl = `/products`;
-    router.push(newUrl, { shallow: true });
+     router.push(newUrl);
+    //  router.push(newUrl, { shallow: true });
   }, [router]);
 
   // Check URL query on initial load to open modal if needed
