@@ -1,5 +1,4 @@
 
-// Separate client component for interactive features
 "use client";
 
 import { BackToHome } from "@/components/backToHome/backToHome";

@@ -1,6 +1,3 @@
-
-
-// userAgentProvider.tsx
 "use client";
 
 import {
@@ -24,7 +21,7 @@ type UserAgentContextType = {
 type UserAgentProviderProps = {
   children: ReactNode;
   userAgent?: UserAgent;
-  initialUserAgent?: string; // Add this prop for SSR
+  initialUserAgent?: string;  
 };
 
 const UserAgentContext = createContext<UserAgentContextType | undefined>(undefined);
